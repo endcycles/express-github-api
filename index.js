@@ -2,14 +2,22 @@ let axios = require('axios');
 let app = require('express')();
 let port = 8000;
 
+app.get('/', async (req, res) => {
+  res.json({ response: 'Please use localhost:8000/:username' });
+});
+
 app.get('/:username', async (req, res) => {
   try {
     let response = await axios(
-      `https://api.github.com/users/justindmo/following?per_page=100`
+      `https://api.github.com/users/${
+        req.params.username
+      }/following?per_page=100`
     );
     res.json({
-      username: req.params.username,
-      followers: Object.keys(response.data).length
+      response: {
+        username: req.params.username,
+        followers: Object.keys(response.data).length
+      }
     });
   } catch (e) {
     console.log(e);
