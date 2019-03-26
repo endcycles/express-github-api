@@ -2,8 +2,8 @@
 
 - NodeJS
 - Express
-- Axios
-- [https://developer.github.com/v3/](Github API)
+- [Axios](https://github.com/axios/axios)
+- [Github API](https://developer.github.com/v3/)
 
 ### Usage
 
