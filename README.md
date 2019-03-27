@@ -16,7 +16,13 @@ http://localhost:8000/api/v1/:username
 ### Return data
 
 ```
-{"response":{"username":"justindmo","followers":10}}
+{
+  "response":
+  {
+    "username": "justindmo",
+    "followers": 10
+  }
+}
 ```
 
 ### Start API server
