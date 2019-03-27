@@ -34,4 +34,5 @@ yarn start
 
 ### Future Updates
 
-- Loop through pages if more than 100 followers
+- Loop through Github API pages if more than 100 followers
+- Database integration with a data collection feature
