@@ -30,7 +30,3 @@ http://localhost:8000/api/v1/:username
 ```
 yarn start
 ```
-
-### Future Updates
-
-- Loop through pages if more than 100 followers
