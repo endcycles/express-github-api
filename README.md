@@ -28,7 +28,6 @@ http://localhost:8000/api/v1/:username
 ### Start API server
 
 ```
-yarn
 yarn start
 ```
 
