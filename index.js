@@ -1,10 +1,19 @@
 const axios = require('axios');
-const app = require('express')();
-const routes = require('./routes');
+const express = require('express');
+const app = express();
+const router = express.Router();
+
+const { getFollowers } = require('./util');
 const port = 8000;
 
+// Middleware
+
+// Routes
+
 app.get('/', (req, res) => {
-  res.json({ response: 'Please use localhost:8000/api/v1/:username' });
+  res.json({
+    response: 'Please use localhost:8000/api/v1/:username'
+  });
 });
 
 app.get('/api/v1/:username', async (req, res) => {
@@ -17,7 +26,7 @@ app.get('/api/v1/:username', async (req, res) => {
     res.json({
       response: {
         username: req.params.username,
-        followers: Object.keys(response.data).length
+        followers: getFollowers(response.data)
       }
     });
   } catch (e) {
