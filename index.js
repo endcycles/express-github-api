@@ -4,7 +4,7 @@ const routes = require('./routes');
 const port = 8000;
 
 app.get('/', (req, res) => {
-  res.json({ response: 'Please use localhost:8000/:username' });
+  res.json({ response: 'Please use localhost:8000/api/v1/:username' });
 });
 
 app.get('/api/v1/:username', async (req, res) => {
