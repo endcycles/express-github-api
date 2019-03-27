@@ -1,8 +1,8 @@
-let axios = require('axios');
-let app = require('express')();
-let port = 8000;
+const axios = require('axios');
+const app = require('express')();
+const port = 8000;
 
-app.get('/', async (req, res) => {
+app.get('/', (req, res) => {
   res.json({ response: 'Please use localhost:8000/:username' });
 });
 

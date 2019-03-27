@@ -1,6 +1,6 @@
 # Express Github API
 
-- NodeJS
+- Node.js
 - Express
 - [Axios](https://github.com/axios/axios)
 - [Github API](https://developer.github.com/v3/)
@@ -26,4 +26,6 @@ yarn
 yarn start
 ```
 
-Access API via: http://localhost:8000
+### Future Updates
+
+- Loop through pages if more than 100 followers
