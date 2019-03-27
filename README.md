@@ -10,7 +10,7 @@
 Input username as a parameter via URL.
 
 ```
-http://localhost:8000/:username
+http://localhost:8000/api/v1/:username
 ```
 
 ### Return data

@@ -1,12 +1,13 @@
 const axios = require('axios');
 const app = require('express')();
+const routes = require('./routes');
 const port = 8000;
 
 app.get('/', (req, res) => {
   res.json({ response: 'Please use localhost:8000/:username' });
 });
 
-app.get('/:username', async (req, res) => {
+app.get('/api/v1/:username', async (req, res) => {
   try {
     let response = await axios(
       `https://api.github.com/users/${
