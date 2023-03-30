@@ -19,8 +19,8 @@ http://localhost:8000/api/v1/:username
 {
   "response":
   {
-    "username": "justindmo",
-    "followers": 10
+    "username": "username",
+    "followers": number
   }
 }
 ```
